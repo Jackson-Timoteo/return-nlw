@@ -1,14 +1,30 @@
 import { CloseButton } from "./CloseButton";
 
+import bugImageUrl from '../assets/bug.svg';
+import ideaImageUrl from '../assets/idea.svg';
+import thoughtImageUrl from '../assets/thought.svg';
+
 const feedbackTypes = {
     BUG: {
-        title: 'Problema'
+        title: 'Problema',
+        image: {
+            source: 'bugImageUrl',
+            alt: '',
+        },
     },
     IDEA: {
-        title: 'Ideia'
+        title: 'Ideia',
+        image: {
+            source: 'ideaImageUrl',
+            alt: '',
+        },
     },
     OTHER: {
-        title: 'Outro'
+        title: 'Outro',
+        image: {
+            source: 'thoughtImageUrl',
+            alt: '',
+        },
     },
 };
 
