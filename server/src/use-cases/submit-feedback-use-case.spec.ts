@@ -15,6 +15,9 @@ describe('Submit feedback', () => {
             comment: 'example comment',
             screenshot: 'test.jpg',
         })).resolves.not.toThrow()
+
+        expect(createFeedbackSpy).toHaveBeenCalled();
+        expect(sendMailSpy).toHaveBeenCalled();
     });
 
     it('should not be able to submit feedback without type', async () =>{
