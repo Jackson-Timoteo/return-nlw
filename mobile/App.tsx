@@ -23,6 +23,8 @@ export default function App() {
   }
 
   return (
+
+    // @ts-ignore
     <View style={{
       flex: 1,
       backgroundColor: theme.colors.background
